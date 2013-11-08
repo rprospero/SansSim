@@ -1,6 +1,6 @@
 var m = [80, 80, 80, 80]; //margins
 var w = 1000 -m[1] - m[3]; //width
-var h = 400 - m[0] - m[2]; //height
+var h = 600 - m[0] - m[2]; //height
 
 var data = [[1,1],[2,2],[3,3],[4,4],[5,5]];
       
