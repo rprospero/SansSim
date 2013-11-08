@@ -36,3 +36,4 @@ graph.append("svg:g")
 
 var trendline = graph.append("svg:path").attr("d",line(data))
 
+d3.select("#radius").on("change",calculate)

@@ -25,3 +25,13 @@ hardSphere = function (q,scale,radius,drho,background) {
     var f2 = f*f*vol*1.0e8;
     return scale*f2+background
 }
+
+calculate = function(val) {
+    var radius = document.getElementById("radius").value
+    //radius = d3.select("#radius").attr("value");
+    var trend = makedata(
+       function(q){
+	   return hardSphere(q,1,radius,1.0e-6,0);},
+       qrange(1e-3,6,10240));
+    trendline.data([trend]).attr("d",line);
+}

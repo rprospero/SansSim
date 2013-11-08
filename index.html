@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
   <head>
     <script src="http://mbostock.github.com/d3/d3.v2.js"></script>
@@ -35,7 +37,14 @@
   <body>
 
     <div id="graph" class="aGraph" 
-	 style="position:absolute;top:0px;left:0; float:left;">
+	 style="position:absolute;top:100px;left:0; float:left;">
+    </div>
+
+    <div id="status">
+      <label>
+	Radius (nm)
+	<input type="number" value="60.0" id="radius">
+      </label>
     </div>
 
     <script src="src/grapher.js"></script>
