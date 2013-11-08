@@ -40,3 +40,7 @@ d3.select("#radius").on("change",calculate)
 d3.select("#contrast").on("change",calculate)
 d3.select("#scale").on("change",calculate)
 d3.select("#noise").on("change",calculate)
+
+d3.select("#qmin").on("change",calculate)
+d3.select("#qmax").on("change",calculate)
+d3.select("#steps").on("change",calculate)

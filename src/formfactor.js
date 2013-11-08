@@ -31,9 +31,15 @@ calculate = function(val) {
     var contrast = document.getElementById("contrast").value;
     var scale = document.getElementById("scale").value;
     var noise = document.getElementById("noise").value*1.0;
+
+    
+    var qmin = document.getElementById("qmin").value*1.0;
+    var qmax = document.getElementById("qmax").value*1.0;
+    var steps = document.getElementById("steps").value*1.0;
+
     var trend = makedata(
        function(q){
 	   return hardSphere(q,scale,radius,contrast,noise);},
-       qrange(1e-3,6,10240));
+       qrange(qmin,qmax,steps));
     trendline.data([trend]).attr("d",line);
 }
