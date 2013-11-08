@@ -2,7 +2,7 @@ var m = [80, 80, 80, 80]; //margins
 var w = 1000 -m[1] - m[3]; //width
 var h = 600 - m[0] - m[2]; //height
 
-var data = [[1,1],[2,2],[3,3],[4,4],[5,5]];
+var data = [[1,0]];
       
 var x = d3.scale.linear().domain([0,6]).range([0,w]);
 var y = d3.scale.log().domain([1e-15,1e2]).range([h,0]);
