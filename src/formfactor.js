@@ -8,6 +8,15 @@ qrange = function (min,max,steps) {
     return list;
 }
 
+makedata = function (f, xs) {
+    var list = [];
+    var ys = xs.map(f);
+    for(i=0;i<ys.length;i++){
+	list[i] = [xs[i],ys[i]];
+    }
+    return list;
+};
+
 hardSphere = function (q,scale,radius,drho,background) {
     var xrad = q*radius;
     var bes = 3.0*(Math.sin(xrad)-xrad*Math.cos(xrad))/Math.pow(xrad,3);
