@@ -37,3 +37,6 @@ graph.append("svg:g")
 var trendline = graph.append("svg:path").attr("d",line(data))
 
 d3.select("#radius").on("change",calculate)
+d3.select("#contrast").on("change",calculate)
+d3.select("#scale").on("change",calculate)
+d3.select("#noise").on("change",calculate)
